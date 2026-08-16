@@ -251,4 +251,102 @@ and R² Score.
 Future improvements can include testing advanced regression models such
 as Random Forest, Gradient Boosting, or XGBoost to improve prediction
 performance.
+# Case Study 3: Customer Segmentation
+
+## 1. Business Problem
+
+A company wants to understand its customers and divide them into
+different groups based on their characteristics and purchasing behavior.
+
+## 2. Problem Type
+
+**Clustering**
+
+This is an unsupervised learning problem because there are no predefined
+customer segment labels. The machine learning algorithm identifies
+groups of similar customers automatically.
+
+## 3. Dataset
+
+The **Mall Customers Dataset** was used for this case study.
+
+The dataset contains information about customers such as:
+
+- Customer ID
+- Gender
+- Age
+- Annual Income
+- Spending Score
+
+## 4. Features Used
+
+For customer segmentation, the following features were selected:
+
+- **Annual Income (k$)**
+- **Spending Score (1-100)**
+
+These features help identify customers based on their income level and
+spending behavior.
+
+## 5. Methodology
+
+The following steps were performed:
+
+1. Loaded the Mall Customers dataset.
+2. Inspected the dataset and checked for missing values.
+3. Selected Annual Income and Spending Score as clustering features.
+4. Visualized the customer distribution.
+5. Used the Elbow Method to determine the optimal number of clusters.
+6. Applied K-Means Clustering.
+7. Created five customer segments.
+8. Visualized the resulting clusters.
+9. Calculated the Silhouette Score to evaluate clustering quality.
+10. Interpreted the customer segments from a business perspective.
+
+## 6. Model Used
+
+**K-Means Clustering**
+
+K-Means is an unsupervised learning algorithm that groups customers
+based on similarity between their selected features.
+
+## 7. Choosing the Number of Clusters
+
+The **Elbow Method** was used to compare the Within-Cluster Sum of
+Squares (WCSS) for different values of K.
+
+Based on the analysis, **5 clusters** were selected for the final
+K-Means model.
+
+## 8. Evaluation Metric
+
+The **Silhouette Score** was used to evaluate the quality of the
+clusters.
+
+A higher Silhouette Score indicates that customers within the same
+cluster are more similar to each other and different from customers
+in other clusters.
+
+## 9. Business Value
+
+Customer segmentation can help businesses:
+
+- Create targeted marketing campaigns.
+- Personalize offers and promotions.
+- Identify high-value customers.
+- Improve customer engagement.
+- Develop suitable pricing strategies.
+- Allocate marketing resources more effectively.
+
+## 10. Conclusion
+
+This case study demonstrates how K-Means Clustering can be used to
+segment customers based on Annual Income and Spending Score.
+
+Five customer segments were identified using the Elbow Method and
+K-Means Clustering.
+
+The resulting segments provide useful insights into customer behavior
+and can help businesses develop more targeted marketing strategies
+and make data-driven decisions.
 
