@@ -155,3 +155,100 @@ The ultimate goal of ChurnGuard is to:
 Detailed business framing is available in:
 
 `ChurnGuard_Business_Framing.ipynb`
+# Case Study 2: House Price Prediction
+
+## 1. Business Problem
+
+A real-estate company wants to predict the selling price of houses
+based on different housing features.
+
+## 2. Problem Type
+
+**Regression**
+
+House price is a continuous numerical value, so this problem is
+treated as a regression problem.
+
+## 3. Dataset
+
+The **California Housing Dataset** is used for this case study.
+
+The dataset contains housing-related features such as:
+
+- Median Income
+- House Age
+- Average Rooms
+- Average Bedrooms
+- Population
+- Average Occupancy
+- Latitude
+- Longitude
+
+### Target Variable
+
+`MedHouseVal`
+
+The target represents the median house value.
+
+## 4. Methodology
+
+The following steps were performed:
+
+1. Loaded the California Housing dataset.
+2. Inspected the dataset and its features.
+3. Checked for missing values.
+4. Performed exploratory data analysis.
+5. Separated features (X) and target (y).
+6. Split the data into training and testing sets.
+7. Built a Linear Regression model.
+8. Generated house price predictions.
+9. Evaluated the model using MAE, RMSE, and R² Score.
+
+## 5. Model Used
+
+**Linear Regression**
+
+Linear Regression was selected as the initial regression model to
+predict house prices from the available housing features.
+
+## 6. Evaluation Metrics
+
+The model was evaluated using:
+
+- **MAE (Mean Absolute Error):** Measures the average prediction error.
+- **RMSE (Root Mean Squared Error):** Gives greater importance to larger
+  prediction errors.
+- **R² Score:** Measures how well the model explains the variation in
+  house prices.
+
+## 7. Business Success Criteria
+
+The model should:
+
+- Have a low MAE.
+- Have a low RMSE.
+- Achieve a high R² Score.
+- Provide reasonably accurate house price predictions.
+
+## 8. Business Value
+
+A house price prediction model can help real-estate businesses:
+
+- Estimate property prices quickly.
+- Support pricing decisions.
+- Identify potentially underpriced or overpriced properties.
+- Reduce manual effort in price estimation.
+- Support data-driven investment decisions.
+
+## 9. Conclusion
+
+This case study demonstrates how Regression Machine Learning can be
+used to predict house prices.
+
+A Linear Regression model was trained and evaluated using MAE, RMSE,
+and R² Score.
+
+Future improvements can include testing advanced regression models such
+as Random Forest, Gradient Boosting, or XGBoost to improve prediction
+performance.
+
