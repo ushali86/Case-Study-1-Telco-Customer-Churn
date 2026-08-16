@@ -350,3 +350,96 @@ The resulting segments provide useful insights into customer behavior
 and can help businesses develop more targeted marketing strategies
 and make data-driven decisions.
 
+# Case Study 4: Spam Detection
+
+## 1. Business Problem
+
+Messaging platforms receive a large number of messages every day.
+Some messages are unwanted spam, advertisements, scams, or promotional
+messages.
+
+The objective is to automatically identify whether a message is Spam
+or Ham (legitimate).
+
+## 2. Problem Type
+
+**Classification**
+
+This is a supervised Machine Learning problem because the dataset
+contains predefined labels: Spam and Ham.
+
+## 3. Dataset
+
+The **SMS Spam Collection Dataset** was used for this case study.
+
+The dataset contains SMS messages classified into:
+
+- **Ham** – legitimate messages
+- **Spam** – unwanted messages
+
+## 4. Methodology
+
+The following steps were performed:
+
+1. Loaded the SMS Spam Collection dataset.
+2. Inspected the dataset.
+3. Checked and removed duplicate records.
+4. Encoded Ham as 0 and Spam as 1.
+5. Split the data into training and testing sets.
+6. Converted text into numerical features using TF-IDF.
+7. Trained a Multinomial Naive Bayes classification model.
+8. Generated predictions.
+9. Evaluated the model using Accuracy, Precision, Recall, and F1-Score.
+10. Analyzed the Confusion Matrix.
+
+## 5. Model Used
+
+**Multinomial Naive Bayes**
+
+Naive Bayes is a commonly used classification algorithm for text
+classification problems such as spam detection.
+
+## 6. Evaluation Metrics
+
+- **Accuracy:** Overall percentage of correctly classified messages.
+- **Precision:** Percentage of messages predicted as spam that were
+  actually spam.
+- **Recall:** Percentage of actual spam messages correctly identified.
+- **F1-Score:** Balance between Precision and Recall.
+
+## 7. Business Importance
+
+Both False Positives and False Negatives are important.
+
+A **False Positive** means a legitimate message is incorrectly
+classified as spam, which may cause users to miss important messages.
+
+A **False Negative** means a spam message is classified as legitimate,
+allowing unwanted messages to reach the user.
+
+Therefore, a good spam detection system should maintain a suitable
+balance between Precision and Recall.
+
+## 8. Business Value
+
+The spam detection system can help:
+
+- Automatically identify unwanted messages.
+- Reduce spam reaching users.
+- Improve user experience.
+- Reduce manual spam filtering.
+- Support safer communication systems.
+
+## 9. Conclusion
+
+This case study demonstrates how supervised Machine Learning can be
+used to classify SMS messages as Spam or Ham.
+
+TF-IDF was used to convert text into numerical features, and a
+Multinomial Naive Bayes model was trained for classification.
+
+The model was evaluated using Accuracy, Precision, Recall, F1-Score,
+and a Confusion Matrix.
+
+Future improvements could include testing Logistic Regression, Support
+Vector Machines, or ensemble methods and comparing their performance.
