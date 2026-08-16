@@ -77,3 +77,81 @@ F1-Score provides a balance between Precision and Recall.
 The Telco Customer Churn problem is a **binary classification problem** because the target variable `Churn` contains two classes: `Yes` and `No`.
 
 The primary business success metric selected is **F1-Score**, which balances Precision and Recall and helps the company identify potential churners effectively.
+
+---
+
+# Case Study 2: ChurnGuard
+
+## 🎯 Business Framing
+
+ChurnGuard is a telecom customer retention system designed to identify customers who are likely to leave the company.
+
+The goal is to identify high-risk customers early and take preventive retention actions.
+
+## 🤖 Machine Learning Problem
+
+- **Problem Type:** Binary Classification
+- **Target Variable:** `Churn`
+- **Churn = Yes:** Customer leaves
+- **Churn = No:** Customer stays
+
+## 💰 False Positive vs False Negative
+
+### False Positive
+
+The model predicts that a customer will churn, but the customer actually stays.
+
+**Business impact:** The company may unnecessarily spend money on discounts, offers, and retention campaigns.
+
+### False Negative
+
+The model predicts that a customer will stay, but the customer actually churns.
+
+**Business impact:** The company loses the customer and future recurring revenue.
+
+### Cost Comparison
+
+| Error | Business Impact |
+|---|---|
+| False Positive | Unnecessary retention cost |
+| False Negative | Lost customer and future revenue |
+
+For ChurnGuard, **False Negative is generally more costly**.
+
+## 📏 Success Metrics
+
+### Primary Metric: Recall
+
+Recall for the `Churn = Yes` class is the primary metric because the company wants to identify as many actual churners as possible.
+
+### Secondary Metric: Precision
+
+Precision helps control unnecessary retention offers.
+
+### Supporting Metric: F1-Score
+
+F1-Score provides a balance between Precision and Recall.
+
+## 🚦 Business Decision Strategy
+
+| Churn Risk | Recommended Action |
+|---|---|
+| High | Contact customer and provide retention offer |
+| Medium | Personalized engagement/offer |
+| Low | Normal customer communication |
+
+## 🏁 Business Goal
+
+The ultimate goal of ChurnGuard is to:
+
+- Reduce customer churn
+- Reduce unnecessary retention spending
+- Protect recurring revenue
+- Improve customer retention
+- Preserve customer lifetime value
+
+## 📁 ChurnGuard Notebook
+
+Detailed business framing is available in:
+
+`ChurnGuard_Business_Framing.ipynb`
